@@ -14,3 +14,5 @@ Aceste videoclipuri mi-au oferit o perspectivă clară asupra modului în care a
 Am vizitat site-ul "PackageCloud" unde am gasit mai multe informatii pentru realizarea temei alese.
 link: https://blog.packagecloud.io/how-does-ltrace-work/
 
+Ziua 3,4: Scrierea proiectului
+In ultimele 2 zile am inceput scrierea script-ului si am avansat cu realizarea proiectului.
