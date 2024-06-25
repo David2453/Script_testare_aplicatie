@@ -1,0 +1,34 @@
+Test 1: Verificare execuție
+---------------------------
+Ieșire:
+---Aplicatia nu genereaza output in std-output.---
+ESUAT
+Cod de ieșire: 0
+Test 2: Verificare ieșire așteptată - EȘEC
+Test 3: Verificare timp de execuție - SUCCES (Timp: 0s)
+Test 4: Verificare cod de ieșire - SUCCES
+Test 5: Verificare dimensiune ieșire - SUCCES (Dimensiune: 0 caractere)
+Test 6: Verificare existența fișierului creat - SUCCES
+Test 7: Verificare conținut fișier  - SUCCES
+Test 8: Verificare utilizare memorie - SUCCES (Memorie:  4356KB)
+Test 9: Număr apeluri read și write
+----------------------------------
+Număr apeluri read: 2
+Număr apeluri write: 0
+Fișierul './sort_numbers' este de tip ELF.
+Test 10: Număr apeluri malloc și free
+-----------------------------------
+% time     seconds  usecs/call     calls      function
+------ ----------- ----------- --------- --------------------
+ 40.20    0.004300        2150         2 fopen
+ 21.32    0.002281        2281         1 __isoc99_fscanf
+ 19.37    0.002072        1036         2 fclose
+  6.30    0.000674         674         1 malloc
+  5.06    0.000541         541         1 qsort
+  5.05    0.000540         540         1 free
+  2.70    0.000289         289         1 exit_group
+------ ----------- ----------- --------- --------------------
+100.00    0.010697                     9 total
+Numarul de teste trecute cu SUCCES: 6 
+Numarul de teste ESUATE: 2 
+Rata de succes este de 75.00%.
