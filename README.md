@@ -34,5 +34,12 @@ check_file.txt --FISIER CARE VERIFICA UN OUTPUT--
 raport_testare.txt --FISIER DE RAPORT AL COMPORTAMENTULUI APLICATIEI--
 
 
+Ziua 8: Scrierea proiectului si aducerii de noi functionalitati
+
+Acum script-ul de test al monitorizarii unei aplicatii genereaza automat un director cu numele aplicatiei testate care contine cele 3 fisiere de raport. 
+Fiecare director de aceste fel este localizat in directorul 'rapoarte'. 
+O alta functionalitate este accesarea fisierelor de raport, modificarea si stergerea lor cu ajutorul unei interfete web. Am realizat acest aspect folosind Flask.
+
+
 
 
