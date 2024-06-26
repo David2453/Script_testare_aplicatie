@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+    <title>Rapoarte pentru {{ app_name }}</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4">Rapoarte pentru {{ app_name }}</h1>
+        <ul class="list-group">
+            {% for file in files %}
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <a href="/rapoarte/{{ app_name }}/{{ file }}">{{ file }}</a>
+                <form action="/delete/{{ app_name }}/{{ file }}" method="post" style="display:inline;">
+                    <button type="submit" class="btn btn-danger btn-sm">Șterge</button>
+                </form>
+            </li>
+            {% endfor %}
+        </ul>
+        <form action="/upload/{{ app_name }}" method="post" enctype="multipart/form-data" class="mt-4">
+            <div class="form-group">
+                <label for="file">Încărcați un nou raport</label>
+                <input type="file" class="form-control-file" id="file" name="file">
+            </div>
+            <button type="submit" class="btn btn-primary">Încărcați</button>
+        </form>
+        <a href="/" class="btn btn-secondary mt-4">Înapoi la lista aplicațiilor</a>
+    </div>
+</body>
+</html>
+
